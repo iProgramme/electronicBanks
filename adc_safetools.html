@@ -1,0 +1,618 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>个人电子银行_中国农业银行_安全工具</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <!-- 公共内容css -->
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    
+    <!-- 调用空的css -->
+    <link href="" id="css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery-1.7.1.js" language="javascript"></script>
+    <!--<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>-->
+    <script src="js/main.js" language="javascript"></script>
+
+    <script LANGUAGE="JavaScript">
+        $(function(){
+            var width = document.getElementsByTagName('body')[0].offsetWidth;
+
+            if (width <= 730) {//1024及以下分辨率
+                $("#css").attr("href", "css/mobile_elecBank_y.css");
+
+
+            } else {
+                $("#css").attr("href", "css/pc_elecBank_y.css");
+
+            }
+            window.onresize=function(){
+
+                var width = document.getElementsByTagName('body')[0].offsetWidth;
+
+                if (width <= 730) {//1024及以下分辨率
+                    $("#css").attr("href", "css/mobile_elecBank_y.css");
+
+                } else {
+                    $("#css").attr("href", "css/pc_elecBank_y.css");
+                }
+
+            };
+        });
+
+    </script>
+</head>
+
+<body >
+
+<div class="main">
+    <!--头部信息-->
+    <div class="main_pad_menu_bg" style="display:none; height: 895px;top:0px;"></div>
+
+    <!--展开样式-->
+    <div class="pad_nav" style="display: none;">
+        <!------first_menu_active 为选中 --disN为隐藏------>
+        <div class="first_menu">
+            <p><span>个人服务</span></p>
+            <div class="second_menu_wrap disN">
+                <div class="second_menu">
+                    <P><span>投资理财</span></P>
+                </div>
+                <div class="second_menu">
+                    <P><span>信用卡</span></P>
+                    <div class="third_menu_wrap disN">
+                        <div class="third_menu">
+                            <P><span>我要办卡</span></P>
+                        </div>
+                        <div class="third_menu">
+                            <P><span>刷卡优惠</span></P>
+                        </div>
+                        <div class="third_menu">
+                            <P><span>分期理财</span></P>
+                        </div>
+                        <div class="third_menu">
+                            <P><span>积分换礼</span></P>
+                        </div>
+                        <div class="third_menu">
+                            <P><span>持卡服务</span></P>
+                        </div>
+                        <div class="third_menu">
+                            <P><span>客户帮助</span></P>
+                        </div>
+                        <div class="third_menu">
+                            <P><span>关于我们</span></P>
+                        </div>
+                    </div>
+                </div>
+                <div class="second_menu">
+                    <P><span>个人电子银行</span></P>
+                </div>
+                <div class="second_menu">
+                    <P><span>存款</span></P>
+                </div>
+                <div class="second_menu">
+                    <P><span>贷款</span></P>
+
+                </div>
+                <!--       <div class="second_menu second_menu_more">
+                             <P><span><a href="javascript:void(0)">更多+</a></span></P>
+
+                         </div>
+                         <div class="second_menu_moreWrap">
+                                 <div class="second_menu">
+                                     <P><span>借记卡</span></P>
+                                 </div>
+                                 <div class="second_menu">
+                                     <P><span>外汇</span></P>
+                                 </div>
+                                 <div class="second_menu">
+                                     <P><span>支付结算</span></P>
+                                 </div>
+                                 <div class="second_menu">
+                                     <P><span>留学金融</span></P>
+                                 </div>
+                                 <div class="second_menu">
+                                     <P><span>贵宾服务</span></P>
+                                 </div>
+                                 <div class="second_menu second_last_menu">
+                                     <P><span>私人银行</span></P>
+                                 </div>
+                         </div>-->
+            </div>
+        </div>
+
+        <div class="first_menu">
+            <p><span>企业服务</span></p>
+            <div class="second_menu_wrap disN">
+                <div class="second_menu second_last_menu">
+                    <P><span>私人银行</span></P>
+                </div>
+            </div>
+        </div>
+
+        <div class="first_menu">
+            <p><span>三农服务</span></p>
+            <div class="second_menu_wrap disN">
+                <div class="second_menu second_last_menu">
+                    <P><span>私人银行</span></P>
+                </div>
+            </div>
+        </div>
+
+        <div class="first_menu">
+            <p><span>小微企业服务</span></p>
+            <div class="second_menu_wrap disN">
+                <div class="second_menu second_last_menu">
+                    <P><span>私人银行</span></P>
+                </div>
+            </div>
+        </div>
+
+        <div class="first_menu">
+            <p><span>关于农行</span></p>
+            <div class="second_menu_wrap disN">
+                <div class="second_menu second_last_menu">
+                    <P><span>私人银行</span></P>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--展开样式-->
+    <div class="header_pc">
+        <div class=" header_con">
+
+            <div class="header_right">
+                <div class="logo_enter fl">
+                    会员登录
+                </div>
+                <div class="search01 fr mr10">
+                    <input type="text" value="请输入关键字" class="search_text fl">
+                    <input type="button" class="search_button fr">
+                </div>
+                <ul class="header_top_1 fr mr4">
+                    <li class="header_top_1_active"><a href="###">分支机构</a></li>
+                    <li>网点查询</li>
+                    <li><a href="###">繁体</a></li>
+                    <li>|</li>
+                    <li><a href="###">English</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!-------------------手机端---------------->
+    <div class="header_phone">
+        <div class="header_left">&nbsp;</div>
+        <div class="header_left header_logo">&nbsp;</div>
+        <div class="header_serch">&nbsp;</div>
+        <div class="nav_2 ">
+            &nbsp;
+        </div>
+    </div>
+    <!-----------------end 手机端-------------->
+    <!-------导航开始------->
+    <div class="big_box">
+         <div class="cf cont_box">
+    <!---logo---->
+        <span class="logo pc">
+             <img src="images/logo.png"/>
+        </span>
+    <!---logo---->
+    <!--导航-->
+    <div class="clearfix cont_nav pc">
+        <div class="topnav clearfix">
+            <ul>
+                <li class="nav_first">
+                    <a href="##"  >
+                        <!--<em class="nav_radius_bg"></em>-->
+                        <span class="nav_bg2">&nbsp;</span>
+                                 <span class="nav_bg3 clearfix">
+                                     <i></i>
+                                     <em>个人电子银行</em>
+                                 </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="##" >
+                        <span class="nav_bg2">&nbsp;</span>
+                                 <span class="nav_bg3">
+                                     服务与功能
+                                 </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="##" >
+                        <span class="nav_bg2">&nbsp;</span>
+                                 <span class="nav_bg3">
+                                     个人网上银行
+                                 </span>
+                    </a>
+                </li>
+                <Li>
+                    <a href="##">
+                        <span class="nav_bg2">&nbsp;</span>
+                                 <span class="nav_bg3">
+                                     掌上银行
+                                 </span>
+                    </a>
+                </Li>
+                <Li>
+                    <a href="##">
+                        <span class="nav_bg2">&nbsp;</span>
+                        <span class="nav_bg3">电话银行</span>
+                    </a>
+                </Li>
+                <Li>
+                    <a href="##">
+                        <span class="nav_bg2">&nbsp;</span>
+                        <span class="nav_bg3">自助银行</span>
+                    </a>
+                </Li>
+                <Li>
+                    <a href="##" class="active">
+                        <span class="nav_bg2">&nbsp;</span>
+                        <span class="nav_bg3">安全专区</span>
+                    </a>
+                </Li>
+            </ul>
+        </div>
+              <span class="nav_right">
+                   <a href="##">
+                       <img src="images/nav_right_ue1.png"/>
+                   </a>
+              </span>
+    </div>
+    <!---导航--->
+    <!-----二级导航----->
+    <div class="sub_nav pc  clearfix">
+        <ul class="sub_nav_list clearfix">
+            <li>
+                <a href="##">
+                    网上银行安全
+                </a>
+                      <span>
+                          |
+                      </span>
+            </li>
+            <li>
+                <a href="##">
+                    电子商务安全
+                </a>
+                      <span>
+                          |
+                      </span>
+            </li>
+            <li>
+                <a href="##">
+                    自助银行安全
+                </a>
+                      <span>
+                          |
+                      </span>
+            </li>
+            <li>
+                <a href="##">
+                    电话银行安全
+                </a>
+                      <span>
+                          |
+                      </span>
+            </li>
+            <li>
+                <a href="##">
+                    掌上银行安全
+                </a>
+                      <span>
+                          |
+                      </span>
+            </li>
+            <li>
+                <a href="##">
+                    安全公告
+                </a>
+                      <span>
+                          |
+                      </span>
+            </li>
+            <li>
+                <a href="##">
+                    安全工具
+                </a>
+                      <span>
+                          |
+                      </span>
+            </li>
+            <li>
+                <a href="##">
+                    安全学堂
+                </a>
+            </li>
+        </ul>
+    </div>
+             <!-----面包屑------>
+             <div class="nav_bottom pc">
+                 <span>您现在的位置：<a class="CurrChnlCls" href="##">首页</a> > <a class="CurrChnlCls" href="##">电子银行</a> > <a href="###" class="CurrChnlCls">安全专区</a> > <a href="###" class="CurrChnlCls">安全工具</a></span>
+             </div>
+             <!-----面包屑------->
+    <!-----二级导航----->
+       </div>
+    </div>
+    <!---------导航开始---->
+ 
+    <!--------------end 头部信息------->
+    <!--中间内容 start-->
+
+<div class="cf content">
+            <div class="content_main" >
+                        <!--表格上面的标题栏-->
+                        <!-- 喻博文-PC隐藏 -->
+                        
+                        <div class="title_table tools_table_td13">   
+
+
+
+<!-- 手机端横条开始 --> <div class="strip ">  </div><!-- 横条结束 -->
+
+
+安全工具为您提供全方位的安全保障</div>
+                        <!--表格的正文部分-->
+                        <div class="biaoge">
+                            <table>
+                                <!-- 这个第一行的所有内容在手机端隐藏，手机端需要的在下面已经另写了 -->
+                                <!-- 喻博文-PC隐藏 -->
+                                <tr class="mobile_disN">
+                                    <td>
+                                        <div class="tools_table_td1 ">
+                                            <div class="tools_table_top fl tools_table_top1">产品名称</div>
+                                            <div class="tools_table_top fl tools_table_top2">适用渠道</div>
+                                            <div class="tools_table_top fl tools_table_top3">最高额度</div>
+                                            <div class="tools_table_top fl tools_table_top4">适用客户</div>
+                                            <div class="tools_table_top fl tools_table_top5">如何使用</div> 
+                                        </div>
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="tools_table_td tools_table_td13 ">
+                                            <div class="tools_table_left fl color">
+                                                <!-- 喻博文-PC隐藏 -->
+                                                <div class="table_left_in"><span class="in_icon1 in_icon"><span class="mobile_disN"><img src="images/proname1.png"></span></span><span class="Kling">K宝</span><span class="arrow pc_disN"><img src="images/up_arrow.png" height="7" width="13" alt="" /></span></div>
+                                            </div>
+                                            <div class="tools_table_right fl">
+                                                <div class="table_right1 fl">
+                                                    <!-- 喻博文-手机显示 -->
+                                                    <span class="span_kbao pro ">产品名称</span>
+                                                    <span class="span">K宝是用来存放客户身份证书的安全硬件，是目前农业银行安全级别最高的认证工具。K宝能为客户在电子银行进行交易提供身份证明，防止他人毛用整数持有者名义进...</span>
+                                                </div>
+                                                <div class="table_right2 fl">
+                                                    <span class="span_kbao use ">使用渠道</span>
+                                                    <ul>
+                                                        <li><span class="icon11 icon"></span><span class="icon_text pc_disN">网上银行</span></li>
+                                                        <li><span class="icon12 icon"></span><span class="icon_text pc_disN">掌上银行</span></li>
+                                                        <li><span class="icon13 icon"></span><span class="icon_text pc_disN">电话银行</span></li>
+                                                        <li><span class="icon14 icon"></span><span class="icon_text pc_disN">自助设备</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table_right3 fl">
+                                                    <span class="span_kbao limit ">最高额度</span>
+                                                    <span class="limit1 span">一代K宝：100万<br />
+                                                    二代K宝：500万<br />
+                                                    同用K宝：500万</span>
+                                                </div>
+                                                <div class="table_right4 fl">
+                                                    <span class="span_kbao applyclient ">适用客户</span>
+                                                    <span class="left1 client1">个人客户</span>
+                                                    <span class="left1 client2">企业客户</span>
+                                                </div>
+                                                <div class="table_right5 fl">
+                                                    
+                                                    <a href="#" class="buttom mobil_buttom">网点办理</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="tools_table_td tools_table_td13">
+                                            <div class="tools_table_left fl">
+                                                <!-- 喻博文-PC隐藏 -->
+                                                <div class="table_left_in"><span class="in_icon2 in_icon"><span  class="mobile_disN"><img src="images/proname2.png"></span></span><span class="Kling">K令</span><span class="arrow pc_disN"><img src="images/up_arrow.png" height="7" width="13" alt="" /></span></div>
+                                            </div>
+                                            <div class="tools_table_right fl">
+                                                <div class="table_right1 fl ">
+                                                    <!-- 喻博文-手机显示 -->
+                                                    <span class="span_kling pro  span_kbao">产品名称</span>
+                                                    <span class="span">K令是农业银行综合考虑安全性和便利性而退出的一款电子银行安全产品，能够同时在个人网银、掌上银行、电话银行和电子商务B2C渠道应用，价格低廉、容易携带...</span>
+                                                </div>
+                                                <div class="table_right2 fl">
+                                                    <span class="span_kling use   span_kbao">使用渠道</span>
+                                                    <ul>
+                                                        <li><span class="icon11 icon"></span><span class="icon_text pc_disN">网上银行</span></li>
+                                                        <li><span class="icon12 icon"></span><span class="icon_text pc_disN">掌上银行</span></li>
+                                                        <li><span class="icon13 icon"></span><span class="icon_text pc_disN">电话银行</span></li>
+                                                        <li><span class="icon14 icon"></span><span class="icon_text pc_disN">自助设备</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table_right3 fl">
+                                                    <span class="span_kling limit span_kbao">最高额度</span>
+                                                    <span class="limit2 span">50万</span>
+                                                </div>
+                                                <div class="table_right4 fl">
+                                                    <span class="span_kling applyclient span_kbao">适用客户</span>
+                                                    <span class="left1">个人客户</span>
+                                                </div>
+                                                <div class="table_right5 fl">
+                                                    
+                                                    <a href="#" class="buttom mobil_buttom">网点办理</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="tools_table_td tools_table_td13">
+                                            <div class="tools_table_left fl color">
+                                                <!-- 喻博文-PC隐藏 -->
+                                                <div class="table_left_in"><span class="in_icon3 in_icon"><span  class="mobile_disN"><img src="images/proname3.png"></span></span><span class="Kling">K码</span><span class="arrow pc_disN"><img src="images/up_arrow.png" height="7" width="13" alt="" /></span></div>
+                                            </div>
+                                            <div class="tools_table_right fl">
+                                                <div class="table_right1 fl ">
+                                                    <!-- 喻博文-手机显示 -->
+                                                    <span class="span_kma pro  span_kbao">产品名称</span>
+                                                    <span class="span">K码是客户在进行交易的过程中使用的手机短信配合验证的一种安全产品。客户在银行绑定自己的手机号码，在进行对外支付时，已绑定的手机将受到验证码。其优点是采...</span>
+                                                </div>
+                                                <div class="table_right2 fl">
+                                                    <span class="span_kma use span_kbao  ">使用渠道</span>
+                                                    <ul>
+                                                        <li><span class="icon11 icon"></span><span class="icon_text pc_disN">网上银行</span></li>
+                                                        <li><span class="icon12 icon"></span><span class="icon_text pc_disN">掌上银行</span></li>
+                                                        <li><span class="icon13 icon"></span><span class="icon_text pc_disN">电话银行</span></li>
+                                                        <li><span class="icon14 icon"></span><span class="icon_text pc_disN">自助设备</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table_right3 fl">
+                                                    <span class="span_kma limit  span_kbao ">最高额度</span>
+                                                    <span class="limit2 span">1000元</span>
+                                                </div>
+                                                <div class="table_right4 fl">
+                                                    <span class="span_kma applyclient  span_kbao ">适用客户</span>
+                                                    <span class="left1">个人客户</span>
+                                                </div>
+                                                <div class="table_right5 fl">
+                                                    
+                                                    <a href="#" class="buttom buttom1 mobil_buttom">网点办理</a>
+                                                    <a href="#" class="buttom buttom2 mobil_buttom">网银签约</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        <div class="tools_table_td tools_table_td13">
+                                            <div class="tools_table_left fl ">
+                                                <!-- 喻博文-PC隐藏 -->
+                                                <div class="table_left_in"><span class="in_icon4 in_icon"><span  class="mobile_disN"><img src="images/proname4.png"></span></span><span class="Kling">动态口令卡</span><span class="arrow pc_disN"><img src="images/up_arrow.png" height="7" width="13" alt="" /></span></div>
+                                            </div>
+                                            <div class="tools_table_right fl">
+                                                <div class="table_right1 fl">
+                                                    <!-- 喻博文-手机显示 -->
+                                                    <span class="span_dongtai pro span_kbao  ">产品名称</span>
+                                                    <span class="span">动态口令卡是我行综合考虑安全性与方便些而退出的一款全新的电子银行安全产品。动态口令卡采用成熟的动态密码技术，实现每次交易时密码的随机变化，有效解决...</span>
+                                                </div>
+                                                <div class="table_right2 fl">
+                                                    <span class="span_dongtai use span_kbao  ">使用渠道</span>
+                                                    <ul>
+                                                        <li><span class="icon11 icon"></span><span class="icon_text pc_disN">网上银行</span></li>
+                                                        <li><span class="icon12 icon"></span><span class="icon_text pc_disN">掌上银行</span></li>
+                                                        <li><span class="icon13 icon"></span><span class="icon_text pc_disN">电话银行</span></li>
+                                                        <li><span class="icon14 icon"></span><span class="icon_text pc_disN">自助设备</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table_right3 fl">
+                                                    <span class="span_dongtai limit  span_kbao ">最高额度</span>
+                                                    <span class="limit2 span">5万</span>
+                                                </div>
+                                                <div class="table_right4 fl">
+                                                    <span class="span_dongtai applyclient  span_kbao ">适用客户</span>
+                                                    <span class="left1">个人客户</span>
+                                                </div>
+                                                <div class="table_right5 fl">
+                                                    
+                                                    <a href="#" class="buttom mobil_buttom">网点办理</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+            </div>
+</div>
+<div class="tools_bottom mobile_disN">
+    <div class="bottom_top bottom_all">安全服务</div>
+    <div class="bottom_bottom bottom_all">
+        <ul>
+            <li class="bottom_li   bottom_li1"><p class="bottom_p    bottom_p1"></p><span>网银助手</span></li>
+            <li class="bottom_li   bottom_li2"><p class="bottom_p    bottom_p2"></p><span>网银安全控件</span></li>
+            <li class="bottom_li   bottom_li3"><p class="bottom_p    bottom_p3"></p><span>限额控制</span></li>
+            <li class="bottom_li   bottom_li4"><p class="bottom_p    bottom_p4"></p><span>消息服务</span></li>
+            <li class="bottom_li   bottom_li5"><p class="bottom_p    bottom_p5"></p><span>密码锁定功能</span></li>
+            <li class="bottom_li   bottom_li6"><p class="bottom_p    bottom_p6"></p><span>安全认证手机号设置</span></li>
+        </ul>
+    </div>
+</div>
+
+
+    <!--中间内容 end -->
+
+
+
+<!-- 手机端横条开始 --> <div class="strip ">  </div><!-- 横条结束 -->
+
+
+
+    <!--foot start-->
+    <div class="copy mt10 pc">
+        <div class="pc_copy">
+            <ul class="foot_ul cf">
+                <li><a target="_blank" href="#">网站声明</a></li>
+                <li class="phone_none">|</li>
+
+                <li><a target="_blank" href="#">网站地图</a></li>
+                <li class="phone_none">|</li>
+                <li><a target="_blank" href="#" class="phone_none">联系我们</a></li>
+                <li class="phone_none">|</li>
+                <li><a target="_blank" href="#">客服热线：<i class="i1">95599</i></a></li>
+                <li class="fre_line">
+                    <form>
+                        <select class="foot_sel">
+                                <option>友情连接</option>
+                                <option>中国招商银行</option>
+                                <option>中国招商银行</option>
+                        </select>
+                   </form>
+                </li>
+            </ul>
+
+            <div class="foot_bot">中国农业银行版权所有&nbsp;&nbsp;京ICP备05049539</div>
+            <a href="#" class="foot_icon fr"><img src="images/copy_right_icon_1.gif" /></a>
+        </div>
+    </div>
+    <div class="cf phone_copy phone fr">
+        <div class="cf pc_copy">
+
+            <div class="foot_atWrap">
+                <p class="widthPer50 fl t_left">
+                    分享至：<i class="foot_icon_p foot_icon_wb mr5"></i><i class="foot_icon_p foot_icon_fq mr5"></i><i class="foot_icon_p foot_icon_wx mr5"></i><i class="foot_icon_p foot_icon_twb"></i>
+                </p>
+                <p class="widthPer50 fl t_right">
+                    客服热线：95599
+                </p>
+            </div>
+            <div class="foot_bot">中国农业银行版权所有&nbsp;&nbsp;京ICP备05049539</div>
+            <a href="#" class="foot_icon fr"><img src="images/copy_right_icon_1.gif" /></a>
+        </div>
+    </div>
+    <!--foot end-->
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

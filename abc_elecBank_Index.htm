@@ -1,0 +1,879 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="Keywords" content=""/>
+    <meta name="Description" content=""/>
+    <meta name="WT.cg_abc" content="首页;电子银行" />
+    <title>个人电子银行_中国农业银行</title>
+    <!-- 公共内容css -->
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!-- 调用空的css -->
+    <link href="" id="css" rel="stylesheet" type="text/css" />
+    <!-- 调用空的css -->
+    <!--[if IE 6]>
+    <link href="css/pc_elecBank_y.css"  rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!-- 调用空的css -->
+    <script src="js/jquery-1.7.1.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script LANGUAGE="JavaScript">
+        $(function(){
+            var width = document.getElementsByTagName('body')[0].offsetWidth;
+            if (width <= 730) {//1024及以下分辨率
+                $("#css").attr("href", "css/mobile_elecBank_y.css");
+            } else {
+                $("#css").attr("href", "css/pc_elecBank_y.css");
+            }
+            window.onresize=function(){
+                var width = document.getElementsByTagName('body')[0].offsetWidth;
+
+                if (width <= 730) {//1024及以下分辨率
+                    $("#css").attr("href", "css/mobile_elecBank_y.css");
+                } else {
+                    $("#css").attr("href", "css/pc_elecBank_y.css");
+                }
+            };
+        });
+
+
+    </script>
+    <!--[if IE 6]>
+    <script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            DD_belatedPNG.fix('img');
+        })
+    </script>
+    <![endif]-->
+    <script>
+        $(function(){
+            $('#login_box dd').hover(function(){
+                $(this).addClass('login_active');
+            },function(){
+                $(this).removeClass('login_active');
+            });
+            /******滚动*****/
+            /*var scrtime;
+             var       scrollHook = $("#scroll_box");
+            scrollHook.mouseover(function(){
+                clearInterval(scrtime);
+            });
+            scrollHook.mouseleave(function(event) {
+                scrtime = setInterval(function(){
+
+                    var jqul = scrollHook.find(".scroll_down");
+                    animateFn(jqul.eq(0));
+                    animateFn(jqul.eq(1));
+
+                },4000);
+            }).trigger("mouseleave");*/
+
+
+            function animateFn( ele ){
+
+                var liHeight = ele.find("li:last").height();
+
+                ele.animate({marginTop : liHeight+4 +"px"},400,function(){
+                    $(this).find("li:last").prependTo(ele).end().find("li:first").hide();
+                    $(this).css({marginTop:0}).find("li:first").fadeIn(400);
+                });
+            }
+
+        })
+    </script>
+</head>
+<body>
+<!--------------头部信息------->
+<div class="main_pad_menu_bg" style="display:none; height: 895px;top:0px;"></div>
+<!--展开样式-->
+<div class="pad_nav" style="display: none;">
+    <!------first_menu_active 为选中 --disN为隐藏------>
+    <div class="first_menu">
+        <p><span>个人服务</span></p>
+        <div class="second_menu_wrap disN">
+            <div class="second_menu">
+                <P><span>投资理财</span></P>
+            </div>
+            <div class="second_menu">
+                <P><span>信用卡</span></P>
+                <div class="third_menu_wrap disN">
+                    <div class="third_menu">
+                        <P><span>我要办卡</span></P>
+                    </div>
+                    <div class="third_menu">
+                        <P><span>刷卡优惠</span></P>
+                    </div>
+                    <div class="third_menu">
+                        <P><span>分期理财</span></P>
+                    </div>
+                    <div class="third_menu">
+                        <P><span>积分换礼</span></P>
+                    </div>
+                    <div class="third_menu">
+                        <P><span>持卡服务</span></P>
+                    </div>
+                    <div class="third_menu">
+                        <P><span>客户帮助</span></P>
+                    </div>
+                    <div class="third_menu">
+                        <P><span>关于我们</span></P>
+                    </div>
+                </div>
+            </div>
+            <div class="second_menu">
+                <P><span>个人电子银行</span></P>
+            </div>
+            <div class="second_menu">
+                <P><span>存款</span></P>
+            </div>
+            <div class="second_menu">
+                <P><span>贷款</span></P>
+
+            </div>
+            <!--       <div class="second_menu second_menu_more">
+                         <P><span><a href="javascript:void(0)">更多+</a></span></P>
+
+                     </div>
+                     <div class="second_menu_moreWrap">
+                             <div class="second_menu">
+                                 <P><span>借记卡</span></P>
+                             </div>
+                             <div class="second_menu">
+                                 <P><span>外汇</span></P>
+                             </div>
+                             <div class="second_menu">
+                                 <P><span>支付结算</span></P>
+                             </div>
+                             <div class="second_menu">
+                                 <P><span>留学金融</span></P>
+                             </div>
+                             <div class="second_menu">
+                                 <P><span>贵宾服务</span></P>
+                             </div>
+                             <div class="second_menu second_last_menu">
+                                 <P><span>私人银行</span></P>
+                             </div>
+                     </div>-->
+        </div>
+    </div>
+
+    <div class="first_menu">
+        <p><span>企业服务</span></p>
+        <div class="second_menu_wrap disN">
+            <div class="second_menu second_last_menu">
+                <P><span>私人银行</span></P>
+            </div>
+        </div>
+    </div>
+
+    <div class="first_menu">
+        <p><span>三农服务</span></p>
+        <div class="second_menu_wrap disN">
+            <div class="second_menu second_last_menu">
+                <P><span>私人银行</span></P>
+            </div>
+        </div>
+    </div>
+
+    <div class="first_menu">
+        <p><span>小微企业服务</span></p>
+        <div class="second_menu_wrap disN">
+            <div class="second_menu second_last_menu">
+                <P><span>私人银行</span></P>
+            </div>
+        </div>
+    </div>
+
+    <div class="first_menu">
+        <p><span>关于农行</span></p>
+        <div class="second_menu_wrap disN">
+            <div class="second_menu second_last_menu">
+                <P><span>私人银行</span></P>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--展开样式-->
+<div class="header_pc">
+    <div class=" header_con">
+
+        <div class="header_right">
+            <div class="logo_enter fl">
+                会员登录
+            </div>
+            <div class="search01 fr mr10">
+                <input type="text" value="请输入关键字" class="search_text fl">
+                <input type="button" class="search_button fr">
+            </div>
+            <ul class="header_top_1 fr mr4">
+                <li class="header_top_1_active"><a href="###">分支机构</a></li>
+                <li>网点查询</li>
+                <li><a href="###">繁体</a></li>
+                <li>|</li>
+                <li><a href="###">English</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<!-------------------手机端---------------->
+<div class="header_phone">
+    <div class="header_left">&nbsp;</div>
+    <div class="header_left header_logo">&nbsp;</div>
+    <div class="header_serch">&nbsp;</div>
+    <div class="nav_2 ">
+        &nbsp;
+    </div>
+</div>
+<!-----------------end 手机端-------------->
+<div class="big_box">
+    <!------内容信息------->
+    <div class="cf cont_box">
+        <!---logo---->
+        <span class="logo pc">
+             <img src="images/logo.png"/>
+        </span>
+        <!---logo---->
+        <!--导航-->
+        <div class="clearfix cont_nav pc">
+            <div class="topnav clearfix">
+                <ul>
+                    <li class="nav_first">
+                        <a href="##"  class="active">
+                            <!--<em class="nav_radius_bg"></em>-->
+                            <span class="nav_bg2">&nbsp;</span>
+                                 <span class="nav_bg3 clearfix">
+                                     <i></i>
+                                     <em>个人电子银行</em>
+                                 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="##" >
+                            <span class="nav_bg2">&nbsp;</span>
+                                 <span class="nav_bg3">
+                                     服务与功能
+                                 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="##" >
+                            <span class="nav_bg2">&nbsp;</span>
+                                 <span class="nav_bg3">
+                                     个人网上银行
+                                 </span>
+                        </a>
+                    </li>
+                    <Li>
+                        <a href="##">
+                            <span class="nav_bg2">&nbsp;</span>
+                                 <span class="nav_bg3">
+                                     掌上银行
+                                 </span>
+                        </a>
+                    </Li>
+                    <Li>
+                        <a href="##">
+                            <span class="nav_bg2">&nbsp;</span>
+                            <span class="nav_bg3">电话银行</span>
+                        </a>
+                    </Li>
+                    <Li>
+                        <a href="##">
+                            <span class="nav_bg2">&nbsp;</span>
+                            <span class="nav_bg3">自助银行</span>
+                        </a>
+                    </Li>
+                    <Li>
+                        <a href="##" >
+                            <span class="nav_bg2">&nbsp;</span>
+                            <span class="nav_bg3">安全专区</span>
+                        </a>
+                    </Li>
+                </ul>
+            </div>
+              <span class="nav_right">
+                   <a href="##">
+                       <img src="images/nav_right_ue1.png"/>
+                   </a>
+              </span>
+        </div>
+        <!---导航-->
+        
+        <!-------banner------>
+        <div class="banner constrain pc">
+              <div class="adArea" style="width: 990px;height: 237px">
+                    <!--<iframe style="border: 0; margin: 0; padding:0;overflow: hidden; width: 100%; height: 100%;" scrolling="0" src="http://ad.abchina.com/AdHub.ashx?AdAreaId=4d421989-8a2e-4b47-bd29-b605a90068a7&RefererUrl=http://www.abchina.com/cn/EBanking/Personal/">
+
+                    </iframe>-->
+                   <div style="width: 992px; overflow: hidden; text-overflow: clip;">
+                        <div>
+                            <a href="##">
+                                <img src="images/elecAd0.jpg"/>
+                            </a>
+                        </div>
+                   </div>
+              </div>
+              <div class="selfbank_login_box pc">
+                  <div class="login_left_radius">
+                        &nbsp;
+                  </div>
+                  <div class="login_content_server clearfix">
+                         <dl id="login_box">
+                             <dt class="login_lock">
+                                 个人网银登录
+                             </dt>
+                             <dd class="cf login_first login_active">
+
+                                 <a target="_blank" href="##"><i class="login_icon0"></i><label>证书登录</label></a>
+
+                             </dd>
+                             <dd class="cf">
+
+                                 <a target="_blank" href="##"><i class="login_icon1"></i><label>用户名登录</label></a>
+
+                             </dd>
+                         </dl>
+                         <ul>
+                             <Li>
+                                 <b class="login_guide"></b>
+                                 <a href="##" target="_blank">证书向导</a>
+                             </Li>
+                             <Li>
+                                 <b class="login_safe"></b>
+                                 <a href="##" target="_blank">安全专区</a>
+                             </Li>
+                         </ul>
+                  </div>
+                  <div class="login_right_radius">
+                       &nbsp;
+                  </div>
+              </div>
+        </div>
+        <!-------banner------>
+        <!-------banner 手机------>
+        <div class="banner elec_banner mobile">
+             <img src="images/ad_mobile0.png"/>
+        </div>
+        <!-------banner 手机------>
+        <!------------首页内容---------------->
+        <div class="indexmain_cont constrain index_main clearfix">
+                <!---------scll new-------------->
+             <div class="scroll_news_wrap clearfix" id="scroll_box">
+                 <div class="scrollnews_item snews_left" id="listhotnews2">
+                     <a href="##" class="title_alink alink_left">优惠活动</a>
+                     <ul class="scroll_down" style="margin-top: 0">
+                          <li>
+                              <span>
+                                  <a href="###" target="_blank">广东地区—农行红包让春节更温暖</a>
+                              </span>
+                          </li>
+                         <li>
+                              <span>
+                                  <a href="###" target="_blank">个人网银新版基金有奖问卷调查获奖客户名单...</a>
+                              </span>
+                         </li>
+                         <li>
+                              <span>
+                                  <a href="###" target="_blank">广东地区—农行红包让春节更温暖</a>
+                              </span>
+                         </li>
+                         <li>
+                              <span>
+                                  <a href="###" target="_blank">个人网银新版基金有奖问卷调查获奖客户名单...</a>
+                              </span>
+                         </li>
+                         <li>
+                              <span>
+                                  <a href="###" target="_blank">广东地区—农行红包让春节更温暖</a>
+                              </span>
+                         </li>
+                         <li>
+                              <span>
+                                  <a href="###" target="_blank">个人网银新版基金有奖问卷调查获奖客户名单...</a>
+                              </span>
+                         </li>
+                     </ul>
+
+                 </div>
+                 <div class="scrollnews_item snews_right" id="listhotnews1">
+                     <a href="##" target="_blank" class="title_alink alink_right">服务公告</a>
+                     <ul class="scroll_down" style="margin-top: 0px;">
+                         <Li>
+                              <span>
+                                  <a href="##" target="_blank">吉林分行应急演练维护的公告（11月1日）</a>
+                              </span>
+                         </Li>
+                         <Li>
+                              <span>
+                                  <a href="##" target="_blank">关于开展企业网上银行收费系统升级的公告（9...</a>
+                              </span>
+                         </Li>
+                         <Li>
+                              <span>
+                                  <a href="##" target="_blank">关于开展企业网上银行收费系统升级的公告（9...</a>
+                              </span>
+                         </Li>
+                     </ul>
+
+                 </div>
+             </div>
+                <!---------scll new--------------->
+                <!------------内容1------>
+                <div class="cf mobile_mb">
+        				&nbsp;
+    				</div>
+             <div class="clearfix personmain_cont ">
+                    <span class="cont_maincont_titlebg titlebg_top">
+                            <span>金融生活</span>
+
+                    </span>
+                    <div class="cont_maincont clearfix">
+                            <ul class="picworld_link">
+                                <Li>
+                                    <a href="##" class="picworld_link_a payonline">&nbsp;</a>
+                                    <p><a href="##">e缴费</a></p>
+                                </Li>
+                                <Li>
+                                    <a href="##" class="picworld_link_a phonerecharge">&nbsp;</a>
+                                    <p><a href="##">在线充值</a></p>
+                                </Li>
+                                <li>
+                                    <a href="##" class="picworld_link_a buyonline">&nbsp;</a>
+                                    <p><a href="##">网上购物</a></p>
+                                </li>
+                                <Li>
+                                    <a href="##" class="picworld_link_a applyonline">&nbsp;</a>
+                                    <p><a href="##">在线申请</a></p>
+                                </Li>
+                                <Li>
+                                    <a href="##" class="picworld_link_a travelworld">
+                                        &nbsp;
+                                    </a>
+                                    <p><a href="##">机票预订</a></p>
+                                </Li>
+                            </ul>
+                            <div class="finalift_cont ">
+                                  <div class="finalift_cont_item">
+                                      <P>
+                                          <span class="squ_green">&nbsp;</span>想在网上购物吗？请开通网上支付吧！
+                                      </P>
+                                       <ul>
+                                           <li>
+                                               <a href="##">网上k码支付</a>
+                                           </li>
+                                           <li class="pc">
+                                               <a href="##">
+                                                   使用K令，怎么支付都安全！
+                                               </a>
+                                           </li>
+                                       </ul>
+                                  </div>
+                                  <span class="sepline_bg pc">
+
+                                  </span>
+                                  <div class="finalift_cont_item">
+                                        <p>
+                                            <span class="squ_green">&nbsp;</span>钱不够花！怎么办？
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <a href="##">
+                                                    在线申请信用卡，额度高，免息50天！
+                                                </a>
+                                            </li>
+                                            <li class="pc">
+                                                <a href="##">
+                                                    小额贷款在线申请，结婚不差钱！
+                                                </a>
+                                            </li>
+                                        </ul>
+                                  </div>
+                                  <span class="sepline_bg pc">
+
+                                  </span>
+                                  <div class="finalift_cont_item">
+                                        <P>
+                                            <span class="squ_green">&nbsp;</span>挂号很难吧？ 让我们来帮您！
+                                        </P>
+                                        <ul>
+                                            <li class="borderB0">
+                                                <a href="##">301医院挂号</a>
+                                            </li>
+                                            <Li class=" pc">
+                                                <a href="##">
+                                                    安徽省立医院挂号
+                                                </a>
+                                            </Li>
+                                        </ul>
+                                  </div>
+                            </div>
+                    </div>
+             </div>
+                <!------------内容1------>
+                <div class="cf mobile_mb">
+        				&nbsp;
+    				</div>
+                <!------------内容2------>
+             <div class="clearfix personmain_cont personmain_cont_middle ">
+                   <span class="cont_maincont_titlebg titlebg_middle">
+                        <span>投资理财</span>
+
+                   </span>
+                   <div class="cont_maincont clearfix">
+                        <ul class="picworld_link picworld_left">
+                            <li>
+                                <a href="##" class="picworld_link_a fina_ico">
+                                    &nbsp;
+                                </a>
+                                <p><a href="##">银行理财</a></p>
+                            </li>
+                            <li>
+                                <a href="##" class="picworld_link_a insurance_ico">
+                                    &nbsp;
+                                </a>
+                                <P><a href="##">保险</a></P>
+                            </li>
+                            <li>
+                                <a href="##" class="picworld_link_a bond_ico">
+                                    &nbsp;
+                                </a>
+                                <P><a href="##">债券</a></P>
+                            </li>
+                            <Li>
+                                <a href="##" class="picworld_link_a fund_ico">
+                                    &nbsp;
+                                </a>
+                                <p><a href="##">基金</a></p>
+                            </Li>
+                            <li>
+                                <a href="##" class="picworld_link_a metal_ico">
+                                    &nbsp;
+                                </a>
+                                <p><a href="##">贵金属</a></p>
+                            </li>
+                            <Li>
+                                <a href="##" class="picworld_link_a business_ico">
+                                    &nbsp
+                                </a>
+                                <p>
+                                    <a href="##">外汇买卖</a>
+                                </p>
+                            </Li>
+                        </ul>
+                        <div class="finalift_cont clearfix">
+                              <div class="finalift_cont_item">
+                                    <p>
+                                        <span class="squ_green">&nbsp;</span>买理财产品，没那么难！
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <a href="##">自动理财，让活期自己赚起来！</a>
+                                        </li>
+                                        <li class="pc">
+                                            <a href="##">网上银行也能买理财，10分钟的事！</a>
+                                        </li>
+                                    </ul>
+                              </div>
+                              <span class="sepline_bg pc">&nbsp;</span>
+                            <div class="finalift_cont_item">
+                                  <p>
+                                      <span class="squ_green">&nbsp;</span>不懂怎么买基金？农行来帮您！
+                                  </p>
+                                  <ul>
+                                      <li>
+                                          <a href="##">基金对比，让您选“基”不发愁！</a>
+                                      </li>
+                                      <li class="pc">
+                                          <a href="##">
+                                              基金热销排行榜
+                                          </a>
+                                      </li>
+                                  </ul>
+                            </div>
+                            <span class="sepline_bg pc">&nbsp;</span>
+                            <div class="finalift_cont_item">
+                                  <p>
+                                      <span class="squ_green">&nbsp;</span>动动手指，让您的钱自己赚钱！
+                                  </p>
+                                  <ul>
+                                      <li class="borderB0">
+                                          <a href="##">
+                                              “双利丰”个人通知存款
+                                          </a>
+                                      </li>
+                                      <Li class="pc">
+                                          <a href="##">
+                                              “自动理财”天天利滚利
+                                          </a>
+                                      </Li>
+                                  </ul>
+                            </div>
+                        </div>
+                   </div>
+             </div>
+                <!------------内容2------>
+                <div class="cf mobile_mb">
+        				&nbsp;
+    				</div>
+                <!------------内容3------>
+             <div class="clearfix personmain_cont personmain_cont_bottom ">
+                   <span class="cont_maincont_titlebg titlebg_bottom">
+                            <span>基础服务</span>
+
+                   </span>
+                   <div class="cf cont_maincont  cont_maincont_bottom">
+                         <ul class="picworld_link picworld_baseserv">
+                              <li>
+                                  <a href="##" class="picworld_link_a remit_ico">
+                                      &nbsp;
+                                  </a>
+                                  <p>
+                                      <a href="##">西联汇款</a>
+                                  </p>
+                              </li>
+                             <Li>
+                                 <a href="##" class="picworld_link_a accounts_ico">&nbsp;</a>
+                                 <p>
+                                     <a href="##">快捷转账</a>
+                                 </p>
+                             </Li>
+                             <li>
+                                 <a href="##" class="picworld_link_a telegraphic_ico">&nbsp</a>
+                                 <p><a href="##">跨境电汇</a></p>
+                             </li>
+                             <Li>
+                                 <a href="##" class="picworld_link_a transfer_ico">&nbsp;</a>
+                                 <p><a href="##">手机号转账</a></p>
+                             </Li>
+                             <Li>
+                                 <a href="##" class="picworld_link_a conversion_ico">&nbsp;</a>
+                                 <p><a href="##">注册账户互转</a></p>
+                             </Li>
+                         </ul>
+                         <div class="finalift_cont">
+                              <div class="finalift_cont_item">
+                                    <p><span class="squ_green">&nbsp;</span>查账单、查明细？ 还用去柜台？你OUT了！</p>
+                                    <ul>
+                                        <li>
+                                            <a href="##">
+                                                看别人都怎么查账单？
+                                            </a>
+                                        </li>
+                                        <Li class="pc">
+                                            <a href="##">
+                                                掌上银行，一键查询！
+                                            </a>
+                                        </Li>
+                                    </ul>
+                              </div>
+                             <span class="sepline_bg pc">&nbsp;</span>
+                             <div class="finalift_cont_item">
+                                    <p><span class="squ_green">&nbsp;</span>账户太多，如何管理您的钱？</p>
+                                    <ul>
+                                        <li>
+                                            <a href="##">个人自动转账</a>
+                                        </li>
+                                        <li class="pc">
+                                            <a href="##">个人资金归集</a>
+                                        </li>
+                                    </ul>
+                             </div>
+                             <span class="sepline_bg pc">&nbsp;</span>
+                             <div class="finalift_cont_item">
+                                    <p><span class="squ_green">&nbsp;</span>不用去排队，在家就能转账汇款！</p>
+                                    <ul>
+                                        <li class="borderB0">
+                                            <a href="##">只要一个手机号，我就能给你汇钱！</a>
+                                        </li>
+                                        <li class="pc">
+                                            <a href="##">网上银行安全工具，转账有保障！</a>
+                                        </li>
+                                    </ul>
+                             </div>
+                         </div>
+                   </div>
+             </div>
+                <!------------内容3------>
+                <!------------底部操作链接------>
+             <div class="cf mobile_mb">
+                    &nbsp;
+             </div>
+             <div class="clearfix financial_service_item">
+                    <div class="financial_service_item_cont financial_service_item4_cont">
+                          <ul>
+                              <li>
+                                  <a class="ico_pay width71" href="##">&nbsp;</a>
+                                  <span>
+                                      <a href="##" class="ico_y">网上银行</a>
+                                  </span>
+                              </li>
+                              <li>
+                                  <a class="ico_telpay width71" href="##">&nbsp;</a>
+                                  <span>
+                                      <a href="##" class="ico_y">掌上银行</a>
+                                  </span>
+                              </li>
+                              <li>
+                                  <a class="ico_cardpay width71" href="##">&nbsp;</a>
+                                  <span>
+                                      <a href="##" class="ico_y">电话银行</a>
+                                  </span>
+                              </li>
+                              <li>
+                                  <a class="ico_serviceprice width71" href="##">&nbsp;</a>
+                                  <span>
+                                      <a href="##" class="ico_y">自助设备</a>
+                                  </span>
+                              </li>
+                              <li class="pc">
+                                  <a class="ico_counter width71" href="##">&nbsp;</a>
+                                  <span>
+                                      <a href="##" class="ico_y">哪种渠道适合我</a>
+                                  </span>
+                              </li>
+                              <li class="mobile">
+                                  <a class="ico_an width71" href="##">&nbsp;</a>
+                                  <span>
+                                      <a href="##" class="ico_y">安全专区</a>
+                                  </span>
+                              </li>
+                          </ul>
+                         <!--<span class="dottline_bg">&nbsp;</span>-->
+                         <div class="imglink_adver pc">
+                                <a href="##">
+                                    <img src="images/ad0.jpg"/>
+                                </a>
+                         </div>
+                    </div>
+             </div>
+             <div class="cf mobile_mb">
+                    &nbsp;
+             </div>
+             <div class="help_save_wrap clearfix">
+                   <div class="help_wrap">
+                        <div class="financial_service_item_cont height97">
+                               <h4>需要帮助</h4>
+                               <ul>
+                                   <Li>
+                                       <a class="e_site_ico" href="##">
+                                           <span class="squ_green">&nbsp;</span>互动e站
+                                       </a>
+                                   </Li>
+                                   <Li>
+                                       <a class="question_ico" href="##">
+                                           <span class="squ_green">&nbsp;</span>常见问题
+                                       </a>
+                                   </Li>
+                                   <Li>
+                                       <a class="standard_ico" href="##">
+                                           <span class="squ_green">&nbsp;</span>收费标准
+                                       </a>
+                                   </Li>
+                                   <Li>
+                                       <a class="microblog_ico" href="##">
+                                           <span class="squ_green">&nbsp;</span>官方微博
+                                       </a>
+                                   </Li>
+                                   <Li>
+                                       <a class="wechat_ico" href="##">
+                                           <span class="squ_green">&nbsp;</span>官方微信
+                                       </a>
+                                       <!--<div class="Wechat ">
+                                            <div class="wechatbg">&nbsp;</div>
+                                            <div class="popup Wechatpic">&nbsp;</div>
+                                       </div>-->
+                                   </Li>
+                               </ul>
+                        </div>
+                   </div>
+                   <div class="help_save_wrap_line pc">
+                         &nbsp;
+                   </div>
+                   <div class="cf mobile_mb">
+                       &nbsp;
+                   </div>
+                   <div class="save_wrap">
+                        <div class="financial_service_item_cont height97">
+                               <h4>安全专区</h4>
+                               <ul>
+                                   <li>
+                                     <a class="howdo_ico" href="##"><span class="squ_green">&nbsp;</span>您该怎么做？</a>
+                                   </li>
+                                   <li>
+                                       <a class="service_ico" href="##"><span class="squ_green">&nbsp;</span>我们的安全服务</a>
+                                   </li>
+                                   <li class="borderB0">
+                                       <a class="savetools" href="##"><span class="squ_green">&nbsp;</span>我们的安全工具</a>
+                                   </li>
+                               </ul>
+                        </div>
+                   </div>
+             </div>
+                <!------------底部操作链接------>
+        </div>
+        <!-----------首页内容----------------->
+    </div>
+    <!-----内容信息-------->
+    <!--<div class="cf mobile_mb">
+        &nbsp;
+    </div>-->
+    <!--页脚-->
+    <!--foot start-->
+    <div class="cf copy mt10 pc">
+        <div class="pc_copy">
+            <ul class="foot_ul cf">
+                <li><a target="_blank" href="#">网站声明</a></li>
+                <li class="phone_none">|</li>
+                <li><a target="_blank" href="#">网站地图</a></li>
+                <li class="phone_none">|</li>
+                <li><a target="_blank" href="#" class="phone_none">联系我们
+                </a></li>
+                <li class="phone_none">|</li>
+                <li><a target="_blank" href="#">客服热线：<i
+                        class="i1">95599</i></a></li>
+                <li class="fre_line">
+                    <form>
+                        <select class="foot_sel">
+                            <option>友情连接</option>
+                            <option>中国招商银行</option>
+                            <option>中国招商银行</option>
+                        </select>
+                    </form>
+                </li>
+            </ul>
+
+            <div class="foot_bot">中国农业银行版权所有&nbsp;&nbsp;京ICP备
+                05049539</div>
+            <a href="#" class="foot_icon fr"><img
+                    src="images/copy_right_icon_1.gif" /></a>
+        </div>
+    </div>
+    <div class="cf phone_copy phone fr">
+        <div class="cf pc_copy">
+
+            <div class="foot_atWrap">
+                <p class="widthPer62 fl t_left">
+                    分享至：<i class="foot_icon_p foot_icon_wb mr5"></i><i
+                        class="foot_icon_p foot_icon_fq mr5"></i><i class="foot_icon_p foot_icon_wx mr5"></i><i
+                        class="foot_icon_p foot_icon_twb"></i>
+                </p>
+                <p class="widthPer38 fl t_right">
+                    客服热线：95599
+                </p>
+            </div>
+            <div class="foot_bot">中国农业银行版权所有&nbsp;&nbsp;京ICP备
+                05049539</div>
+            <a href="#" class="foot_icon fr"><img
+                    src="images/copy_right_icon_1.gif" /></a>
+        </div>
+    </div>
+    <!--foot end-->
+    <!--页脚-->
+</div>
+</body>
+</html>
